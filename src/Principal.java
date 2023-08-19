@@ -1,9 +1,9 @@
 import entidade.*;
 import entidade.enuns.FormaDePagamento;
 import operacoes.Venda;
-import plataforma.Carrinho;
-import plataforma.Orcamento;
-import plataforma.Pedido;
+import processo.Carrinho;
+import processo.Orcamento;
+import processo.Pedido;
 
 public class Principal {
     public static void main(String[] args) {
@@ -39,7 +39,7 @@ public class Principal {
         Pedido pedido2 = new Pedido(orcamentoDeRenan, FormaDePagamento.PIX);
 
         //VENDA REALIZADA
-        Venda venda = new Venda(pedido1);
+        Venda venda = new Venda(pedido2);
 
         System.out.println(venda.toString());
         }

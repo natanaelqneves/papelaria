@@ -3,10 +3,6 @@ package entidade;
 public class Cliente extends Pessoa{
     private String CPF;
 
-    public Cliente(String CPF) {
-        this.CPF = CPF;
-    }
-
     public Cliente(String nome, String endereco, String telefone, String CPF) {
         super(nome, endereco, telefone);
         this.CPF = CPF;

@@ -1,8 +1,6 @@
 package operacoes;
 
-import entidade.enuns.FormaDePagamento;
-import plataforma.Orcamento;
-import plataforma.Pedido;
+import processo.Pedido;
 
 import java.time.LocalDateTime;
 

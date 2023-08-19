@@ -1,4 +1,4 @@
-package plataforma;
+package processo;
 
 import entidade.enuns.FormaDePagamento;
 
@@ -25,7 +25,7 @@ public class Pedido {
 
     private Float descontoOfertado() {
         if(formaDePagamento.equals(FormaDePagamento.DINHEIRO) || formaDePagamento.equals(FormaDePagamento.PIX)){
-            return orcamento.getCarrinho().getValorTotal() * 0.15f;
+            return orcamento.getCarrinho().getValorTotal() * 0.25f;
         } else if (formaDePagamento.equals(FormaDePagamento.DEBITO)){
             return  orcamento.getCarrinho().getValorTotal() * 0.05f;
         } else {

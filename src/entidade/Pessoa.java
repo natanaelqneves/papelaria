@@ -12,10 +12,10 @@ public abstract class Pessoa {
     public Pessoa() {
     }
     public Pessoa(String nome, String endereco, String telefone) {
-        if(this.getClass() == Cliente.class){
+        if(this instanceof Cliente/*this.getClass() == Cliente.class*/){
             this.id = contadorCliente;
             contadorCliente++;
-        } else if( this.getClass() == Fornecedor.class) {
+        } else if(this instanceof Fornecedor /*this.getClass() == Fornecedor.class*/) {
             this.id = contadorFornecedor;
             contadorFornecedor++;
         } else {

@@ -1,4 +1,4 @@
-package plataforma;
+package processo;
 
 import entidade.Cliente;
 import entidade.Funcionario;

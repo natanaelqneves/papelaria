@@ -7,11 +7,6 @@ public class Fornecedor extends Pessoa{
         this.CNPJ = CNPJ;
     }
 
-    public Fornecedor(String nome, String endereco, String telefone, String CNPJ) {
-        super(nome, endereco, telefone);
-        this.CNPJ = CNPJ;
-    }
-
     public String getCNPJ() {
         return CNPJ;
     }
